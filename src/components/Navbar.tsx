@@ -3,6 +3,7 @@ import { Menu, X, ArrowUp } from 'lucide-react';
 import { navItems } from '../data/portfolioData';
 import { useActiveSection } from '../hooks/useAnimations';
 import { GithubIcon, LinkedinIcon } from './Icons';
+import akhilImg from '../assets/akhil.jpg';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -132,7 +133,7 @@ export default function Navbar() {
           <div className="flex flex-col gap-1.5">
             <div className="flex items-center gap-3 px-2 pb-6 mb-2 border-b border-amber-500/20">
               <img
-                src="/akhil.jpg"
+                src={akhilImg}
                 alt="Akhil K"
                 className="w-12 h-12 rounded-xl object-cover object-top border border-amber-400/40"
               />

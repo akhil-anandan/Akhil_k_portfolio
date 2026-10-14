@@ -1,5 +1,6 @@
 import { Mail, Heart } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
+import akhilImg from '../assets/akhil.jpg';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -14,7 +15,7 @@ export default function Footer() {
           {/* Brand & Tagline */}
           <div className="flex items-center gap-3">
             <img
-              src="/akhil.jpg"
+              src={akhilImg}
               alt="Akhil K"
               className="w-10 h-10 rounded-xl object-cover object-top border border-amber-400/40"
             />

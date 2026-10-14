@@ -1,5 +1,6 @@
 import { Code2, Video, Palette, Lightbulb, MapPin, Sparkles, CheckCircle2 } from 'lucide-react';
 import SectionWrapper from './SectionWrapper';
+import akhilImg from '../assets/akhil.jpg';
 
 const highlights = [
   { label: 'Python & Django Development', icon: Code2 },
@@ -23,7 +24,7 @@ export default function About() {
             {/* Image Card Container */}
             <div className="relative rounded-2xl md:rounded-3xl overflow-hidden border border-amber-500/30 bg-[#0d1322] shadow-2xl shadow-amber-950/40">
               <img
-                src="/akhil.jpg"
+                src={akhilImg}
                 alt="Akhil K - Python Developer & Creative Designer"
                 className="w-full h-auto max-h-[460px] object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
                 loading="lazy"

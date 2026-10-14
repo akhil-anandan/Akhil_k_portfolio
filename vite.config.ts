@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Akhil_k_portfolio/',
   plugins: [
     react(),
     tailwindcss(),

@@ -2,6 +2,7 @@ import { useState, type FormEvent } from 'react';
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react';
 import SectionWrapper from './SectionWrapper';
 import { GithubIcon, LinkedinIcon } from './Icons';
+import akhilImg from '../assets/akhil.jpg';
 
 type FormStatus = 'idle' | 'sending' | 'success' | 'error';
 
@@ -52,7 +53,7 @@ export default function Contact() {
           <div className="glass-card rounded-2xl p-6 border-amber-500/20 mb-6">
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="/akhil.jpg"
+                src={akhilImg}
                 alt="Akhil K"
                 className="w-14 h-14 rounded-2xl object-cover object-top border-2 border-amber-400 shadow-md"
               />

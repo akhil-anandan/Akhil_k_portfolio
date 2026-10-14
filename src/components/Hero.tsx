@@ -2,6 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import { ArrowDown, ExternalLink, Sparkles, MapPin } from 'lucide-react';
 import { useTypingAnimation, useMouseGlow } from '../hooks/useAnimations';
 import { GithubIcon, LinkedinIcon } from './Icons';
+import akhilImg from '../assets/akhil.jpg';
 
 const typingWords = [
   'Python Developer',
@@ -205,7 +206,7 @@ export default function Hero() {
               {/* Framed image */}
               <div className="relative rounded-3xl overflow-hidden border-2 border-amber-500/30 bg-[#0d1322] shadow-2xl shadow-amber-950/60 group">
                 <img
-                  src="/akhil.jpg"
+                  src={akhilImg}
                   alt="Akhil K - Python Developer & Creative Designer"
                   className="w-full h-auto object-cover object-top max-h-[440px] sm:max-h-[500px] transition-transform duration-700 group-hover:scale-[1.03]"
                 />
