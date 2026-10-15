@@ -46,9 +46,9 @@ export default function About() {
               </div>
             </div>
 
-            {/* Corner Decorative Accent */}
-            <div className="absolute -bottom-3 -right-3 w-16 h-16 rounded-2xl border-2 border-amber-500/40 -z-10 bg-amber-500/10 blur-[1px]" />
-            <div className="absolute -top-3 -left-3 w-12 h-12 rounded-xl border border-indigo-500/30 -z-10 bg-indigo-500/10" />
+            {/* Corner Decorative Accent - hidden on small screens to prevent overflow */}
+            <div className="hidden sm:block absolute -bottom-3 -right-3 w-16 h-16 rounded-2xl border-2 border-amber-500/40 -z-10 bg-amber-500/10 blur-[1px]" />
+            <div className="hidden sm:block absolute -top-3 -left-3 w-12 h-12 rounded-xl border border-indigo-500/30 -z-10 bg-indigo-500/10" />
           </div>
 
           {/* Location Badge */}

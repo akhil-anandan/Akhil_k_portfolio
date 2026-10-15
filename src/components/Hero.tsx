@@ -43,13 +43,14 @@ export default function Hero() {
         }}
       />
 
-      {/* Mouse-following warm amber glow */}
+      {/* Mouse-following warm amber glow - desktop only */}
       <div
-        className="absolute w-[500px] h-[500px] rounded-full pointer-events-none transition-all duration-700 ease-out hidden md:block"
+        className="absolute w-[500px] h-[500px] rounded-full pointer-events-none transition-all duration-700 ease-out hidden lg:block"
         style={{
           left: x - 250,
           top: y - 250,
-          background: 'radial-gradient(circle, rgba(245,158,11,0.12) 0%, transparent 68%)',
+          background: 'radial-gradient(circle, rgba(245,158,11,0.10) 0%, transparent 68%)',
+          transform: 'translateZ(0)',
         }}
       />
 
@@ -59,9 +60,9 @@ export default function Hero() {
       <div className="absolute bottom-1/4 left-[12%] w-10 h-10 border border-amber-500/20 rounded-lg rotate-45 animate-float-slow opacity-25 pointer-events-none" />
       <div className="absolute top-[65%] right-[10%] w-16 h-16 border border-indigo-500/20 rounded-2xl rotate-6 animate-float opacity-20 pointer-events-none" />
 
-      {/* Ambient background glows */}
-      <div className="absolute top-[18%] left-[25%] w-72 h-72 bg-amber-500/10 rounded-full blur-[120px] animate-pulse-soft pointer-events-none" />
-      <div className="absolute bottom-[20%] right-[20%] w-80 h-80 bg-orange-600/10 rounded-full blur-[140px] animate-pulse-soft pointer-events-none" style={{ animationDelay: '1.5s' }} />
+      {/* Ambient background glows — reduced blur radius for mobile GPU */}
+      <div className="absolute top-[18%] left-[25%] w-72 h-72 bg-amber-500/10 rounded-full blur-[80px] animate-pulse-soft pointer-events-none" style={{ transform: 'translateZ(0)' }} />
+      <div className="absolute bottom-[20%] right-[20%] w-80 h-80 bg-orange-600/8 rounded-full blur-[100px] animate-pulse-soft pointer-events-none" style={{ animationDelay: '1.5s', transform: 'translateZ(0)' }} />
 
       {/* Main Container */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full">
@@ -226,11 +227,11 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Floating decorative tags */}
-              <div className="absolute -top-3 -right-3 px-3 py-1.5 rounded-xl bg-[#0d1322]/90 border border-amber-500/30 backdrop-blur-md text-[11px] font-mono text-amber-300 shadow-lg">
+              {/* Floating decorative tags — kept within image bounds on mobile */}
+              <div className="absolute top-2 right-2 sm:-top-3 sm:-right-3 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xl bg-[#0d1322]/90 border border-amber-500/30 backdrop-blur-md text-[10px] sm:text-[11px] font-mono text-amber-300 shadow-lg z-10">
                 Python &bull; Django
               </div>
-              <div className="absolute -bottom-3 -left-3 px-3 py-1.5 rounded-xl bg-[#0d1322]/90 border border-amber-500/30 backdrop-blur-md text-[11px] font-mono text-amber-300 shadow-lg">
+              <div className="absolute bottom-12 left-2 sm:-bottom-3 sm:-left-3 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xl bg-[#0d1322]/90 border border-amber-500/30 backdrop-blur-md text-[10px] sm:text-[11px] font-mono text-amber-300 shadow-lg z-10">
                 Video &bull; Design
               </div>
             </div>
