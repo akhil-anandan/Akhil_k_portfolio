@@ -18,7 +18,11 @@ export default function SectionWrapper({ id, children, className = '', title, su
       ref={ref}
       className={`relative py-16 sm:py-20 md:py-28 px-4 sm:px-6 lg:px-8 ${className}`}
     >
-      <div className={`max-w-6xl mx-auto transition-all duration-700 ${isRevealed ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div
+        className={`max-w-6xl mx-auto transition-all duration-700 ${
+          isRevealed ? 'opacity-100 translate-y-0' : 'max-sm:opacity-100 max-sm:translate-y-0 opacity-0 translate-y-8'
+        }`}
+      >
         {title && (
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-[family-name:var(--font-display)] mb-4">

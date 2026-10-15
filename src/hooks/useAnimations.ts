@@ -50,8 +50,10 @@ export function useTypingAnimation(words: string[], typingSpeed = 80, deletingSp
           setDisplayText(displayText.slice(0, -1));
         }, deletingSpeed);
       } else {
-        setIsDeleting(false);
-        setWordIndex((prev) => (prev + 1) % words.length);
+        timeout = setTimeout(() => {
+          setIsDeleting(false);
+          setWordIndex((prev) => (prev + 1) % words.length);
+        }, 100);
       }
     }
 

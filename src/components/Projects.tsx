@@ -31,7 +31,7 @@ export default function Projects() {
                 
                 {/* Tech icon watermark */}
                 <div className="flex flex-col items-center gap-2 select-none relative z-10">
-                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-black/50 backdrop-blur-md border border-amber-400/30 flex items-center justify-center shadow-lg">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-black/70 border border-amber-400/30 flex items-center justify-center shadow-lg">
                     <Icon size={28} className="text-amber-300" />
                   </div>
                   <span className="text-[11px] sm:text-xs uppercase tracking-widest text-amber-200 font-mono font-medium">
@@ -41,7 +41,7 @@ export default function Projects() {
 
                 {/* Category badge */}
                 <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-black/60 backdrop-blur-md text-amber-300 border border-amber-400/20">
+                  <span className="px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold bg-black/75 text-amber-300 border border-amber-400/20">
                     {project.category}
                   </span>
                 </div>

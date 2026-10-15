@@ -34,7 +34,7 @@ export default function About() {
               <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#090d16] via-[#090d16]/60 to-transparent" />
 
               {/* Status pill on image */}
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between px-3.5 py-2 rounded-xl bg-black/60 backdrop-blur-md border border-white/10">
+              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between px-3.5 py-2 rounded-xl bg-black/80 border border-white/10">
                 <div className="flex items-center gap-2">
                   <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
                   <span className="text-xs font-medium text-slate-200">Open to Projects & Roles</span>
@@ -88,7 +88,7 @@ export default function About() {
               {highlights.map((item) => (
                 <div
                   key={item.label}
-                  className="glass-card rounded-xl px-3.5 py-3 flex items-center gap-2.5 transition-all duration-300 hover:border-amber-500/40 hover:scale-[1.02]"
+                  className="glass-card rounded-xl px-3.5 py-3 flex items-center gap-2.5 transition-all duration-300 hover:border-amber-400/50 hover:bg-white/[0.04]"
                 >
                   <item.icon size={16} className="text-amber-400 shrink-0" />
                   <span className="text-xs sm:text-sm text-slate-200 font-medium">{item.label}</span>

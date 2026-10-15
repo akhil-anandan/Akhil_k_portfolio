@@ -60,9 +60,9 @@ export default function Hero() {
       <div className="absolute bottom-1/4 left-[12%] w-10 h-10 border border-amber-500/20 rounded-lg rotate-45 animate-float-slow opacity-25 pointer-events-none" />
       <div className="absolute top-[65%] right-[10%] w-16 h-16 border border-indigo-500/20 rounded-2xl rotate-6 animate-float opacity-20 pointer-events-none" />
 
-      {/* Ambient background glows — reduced blur radius for mobile GPU */}
-      <div className="absolute top-[18%] left-[25%] w-72 h-72 bg-amber-500/10 rounded-full blur-[80px] animate-pulse-soft pointer-events-none" style={{ transform: 'translateZ(0)' }} />
-      <div className="absolute bottom-[20%] right-[20%] w-80 h-80 bg-orange-600/8 rounded-full blur-[100px] animate-pulse-soft pointer-events-none" style={{ animationDelay: '1.5s', transform: 'translateZ(0)' }} />
+      {/* Ambient background glows — hidden on small screens to conserve mobile GPU */}
+      <div className="hidden sm:block absolute top-[18%] left-[25%] w-72 h-72 bg-amber-500/10 rounded-full blur-[80px] pointer-events-none" />
+      <div className="hidden sm:block absolute bottom-[20%] right-[20%] w-80 h-80 bg-orange-600/8 rounded-full blur-[100px] pointer-events-none" />
 
       {/* Main Container */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 w-full">
@@ -216,7 +216,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#090d16]/90 via-transparent to-transparent pointer-events-none" />
 
                 {/* Bottom badge */}
-                <div className="absolute bottom-4 left-4 right-4 p-3 rounded-2xl bg-black/60 backdrop-blur-md border border-amber-500/20 flex items-center justify-between">
+                <div className="absolute bottom-4 left-4 right-4 p-3 rounded-2xl bg-black/80 border border-amber-500/20 flex items-center justify-between">
                   <div>
                     <p className="text-white font-bold text-sm">Akhil K</p>
                     <p className="text-amber-400 text-xs font-mono">Palakkad, Kerala</p>
@@ -228,10 +228,10 @@ export default function Hero() {
               </div>
 
               {/* Floating decorative tags — kept within image bounds on mobile */}
-              <div className="absolute top-2 right-2 sm:-top-3 sm:-right-3 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xl bg-[#0d1322]/90 border border-amber-500/30 backdrop-blur-md text-[10px] sm:text-[11px] font-mono text-amber-300 shadow-lg z-10">
+              <div className="absolute top-2 right-2 sm:-top-3 sm:-right-3 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xl bg-[#0d1322]/95 border border-amber-500/30 text-[10px] sm:text-[11px] font-mono text-amber-300 shadow-lg z-10">
                 Python &bull; Django
               </div>
-              <div className="absolute bottom-12 left-2 sm:-bottom-3 sm:-left-3 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xl bg-[#0d1322]/90 border border-amber-500/30 backdrop-blur-md text-[10px] sm:text-[11px] font-mono text-amber-300 shadow-lg z-10">
+              <div className="absolute bottom-12 left-2 sm:-bottom-3 sm:-left-3 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-xl bg-[#0d1322]/95 border border-amber-500/30 text-[10px] sm:text-[11px] font-mono text-amber-300 shadow-lg z-10">
                 Video &bull; Design
               </div>
             </div>

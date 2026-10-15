@@ -120,7 +120,7 @@ export default function Navbar() {
         }`}
       >
         <div
-          className={`absolute inset-0 bg-black/80 backdrop-blur-md transition-opacity duration-300 ${
+          className={`absolute inset-0 bg-black/85 transition-opacity duration-300 ${
             isMobileOpen ? 'opacity-100' : 'opacity-0'
           }`}
           onClick={() => setIsMobileOpen(false)}

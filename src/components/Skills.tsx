@@ -19,7 +19,7 @@ export default function Skills() {
             onClick={() => setActiveCategory(idx)}
             className={`flex items-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all duration-200 cursor-pointer ${
               activeCategory === idx
-                ? 'bg-amber-400 text-slate-950 font-semibold shadow-md shadow-amber-400/25 scale-[1.02]'
+                ? 'bg-amber-400 text-slate-950 font-bold shadow-md shadow-amber-400/25 ring-1 ring-amber-300'
                 : 'glass-card text-slate-300 hover:text-white hover:border-amber-500/40'
             }`}
           >
@@ -36,7 +36,7 @@ export default function Skills() {
             key={cat.title}
             className={`glass-card rounded-2xl p-5 sm:p-6 transition-all duration-300 ${
               activeCategory === catIdx
-                ? 'border-amber-400/50 shadow-xl shadow-amber-500/10 scale-[1.01]'
+                ? 'border-amber-400/60 shadow-xl shadow-amber-500/10'
                 : ''
             }`}
           >

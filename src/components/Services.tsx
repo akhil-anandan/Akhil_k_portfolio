@@ -14,7 +14,7 @@ export default function Services() {
           return (
             <div
               key={service.title}
-              className="group glass-card rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:border-amber-400/50 hover:scale-[1.02] hover:shadow-xl hover:shadow-amber-500/10 flex flex-col justify-between"
+              className="group glass-card rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:border-amber-400/50 hover:shadow-xl hover:shadow-amber-500/10 flex flex-col justify-between"
             >
               <div>
                 <div className="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-400/30 flex items-center justify-center mb-4 group-hover:bg-amber-400 group-hover:text-slate-950 transition-all duration-300">

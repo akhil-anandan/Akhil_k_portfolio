@@ -83,7 +83,7 @@ export default function Contact() {
                 <Wrapper
                   key={item.label}
                   {...wrapperProps}
-                  className="group flex items-center gap-4 glass-card rounded-xl p-4 transition-all duration-300 hover:border-amber-400/40 hover:scale-[1.01]"
+                  className="group flex items-center gap-4 glass-card rounded-xl p-4 transition-all duration-300 hover:border-amber-400/40"
                 >
                   <div className="w-11 h-11 rounded-xl bg-amber-500/15 border border-amber-400/30 flex items-center justify-center shrink-0 group-hover:bg-amber-400 group-hover:text-slate-950 transition-colors">
                     <Icon size={18} className="text-amber-400 group-hover:text-slate-950 transition-colors" />
@@ -103,7 +103,7 @@ export default function Contact() {
               href="https://github.com/akhil-anandan"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-4 glass-card rounded-xl p-4 transition-all duration-300 hover:border-amber-400/40 hover:scale-[1.01]"
+              className="group flex items-center gap-4 glass-card rounded-xl p-4 transition-all duration-300 hover:border-amber-400/40"
             >
               <div className="w-11 h-11 rounded-xl bg-amber-500/15 border border-amber-400/30 flex items-center justify-center shrink-0 group-hover:bg-amber-400 group-hover:text-slate-950 transition-colors">
                 <GithubIcon size={18} className="text-amber-400 group-hover:text-slate-950 transition-colors" />
@@ -120,7 +120,7 @@ export default function Contact() {
               href="https://www.linkedin.com/in/akhil-k-a98a7731a/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-4 glass-card rounded-xl p-4 transition-all duration-300 hover:border-amber-400/40 hover:scale-[1.01]"
+              className="group flex items-center gap-4 glass-card rounded-xl p-4 transition-all duration-300 hover:border-amber-400/40"
             >
               <div className="w-11 h-11 rounded-xl bg-amber-500/15 border border-amber-400/30 flex items-center justify-center shrink-0 group-hover:bg-amber-400 group-hover:text-slate-950 transition-colors">
                 <LinkedinIcon size={18} className="text-amber-400 group-hover:text-slate-950 transition-colors" />
@@ -207,7 +207,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={status === 'sending'}
-              className="w-full px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-400 to-amber-600 text-slate-950 font-bold text-sm sm:text-base shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 hover:scale-[1.01] disabled:opacity-60 disabled:cursor-not-allowed transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-400 to-amber-600 text-slate-950 font-bold text-sm sm:text-base shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 disabled:opacity-60 disabled:cursor-not-allowed transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer"
             >
               {status === 'sending' ? (
                 <>

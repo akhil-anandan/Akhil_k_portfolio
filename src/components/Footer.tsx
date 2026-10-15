@@ -2,8 +2,9 @@ import { Mail, Heart } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from './Icons';
 import akhilImg from '../assets/akhil.jpg';
 
+const CURRENT_YEAR = new Date().getFullYear();
+
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="relative border-t border-amber-500/15 bg-[#05080f]">
@@ -60,7 +61,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-slate-400 text-xs sm:text-sm flex items-center justify-center gap-1.5 font-medium">
-            &copy; {currentYear} Akhil K. Crafted with
+            &copy; {CURRENT_YEAR} Akhil K. Crafted with
             <Heart size={13} className="text-amber-400 fill-amber-400" />
             in Palakkad, Kerala
           </p>
